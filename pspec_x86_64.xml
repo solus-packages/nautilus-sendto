@@ -1,0 +1,37 @@
+<PISI>
+    <Source>
+        <Name>nautilus-sendto</Name>
+        <Packager>
+            <Name>Stig Svensson</Name>
+            <Email>stigarn@protonmail.ch</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>desktop.gnome</PartOf>
+        <Summary xml:lang="en">Easily send files via email from within Nautilus</Summary>
+        <Description xml:lang="en">The Nautilus Send To plugin provides the Nautilus file manager with a context menu component for quickly sending files via email. Supported email clients are Evolution, Thunderbird/Icedove, balsa and Sylpheed/Claws. Nautilus Send To also provides the option of compressing the files (tar.bz2, tar.gz, or zip) before sending. 
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>nautilus-sendto</Name>
+        <Summary xml:lang="en">Easily send files via email from within Nautilus</Summary>
+        <Description xml:lang="en">The Nautilus Send To plugin provides the Nautilus file manager with a context menu component for quickly sending files via email. Supported email clients are Evolution, Thunderbird/Icedove, balsa and Sylpheed/Claws. Nautilus Send To also provides the option of compressing the files (tar.bz2, tar.gz, or zip) before sending. 
+</Description>
+        <PartOf>desktop.gnome</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/appdata/nautilus-sendto.metainfo.xml</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-12-22</Date>
+            <Version>3.8.6</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Stig Svensson</Name>
+            <Email>stigarn@protonmail.ch</Email>
+        </Update>
+    </History>
+</PISI>

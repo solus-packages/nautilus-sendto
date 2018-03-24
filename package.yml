@@ -1,0 +1,19 @@
+name       : nautilus-sendto
+version    : 3.8.6
+release    : 1
+source     :
+    - https://github.com/GNOME/nautilus-sendto/archive/NAUTILUS_SENDTO_3_8_6.tar.gz : fa4f2572bb252a6aaabfd69438060f33bade4d514f3e39c0e19c8be5b1dd0698
+license    : GPL-2.0
+component  : desktop.gnome
+summary    : Easily send files via email from within Nautilus
+description: |
+     The Nautilus Send To plugin provides the Nautilus file manager with a context menu component for quickly sending files via email. Supported email clients are Evolution, Thunderbird/Icedove, balsa and Sylpheed/Claws. Nautilus Send To also provides the option of compressing the files (tar.bz2, tar.gz, or zip) before sending. 
+builddeps  :
+    - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(appstream-glib)
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
